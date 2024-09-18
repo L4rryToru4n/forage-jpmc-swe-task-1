@@ -66,7 +66,7 @@ if __name__ == "__main__":
         
         for quote in quotes:
             stock, bid_price, ask_price, price = getDataPoint(quote)
-            # Append a price into an array.
+            # Append a price into a dictionary.
             prices[stock] = price
             
             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
